@@ -1,0 +1,6 @@
+question,option1,option2,option3,option4,correctAnswer,marks
+What does HTML stand for?,Hyper Text Markup Language,High Text Machine Language,Hyper Tool Markup Language,Home Text Markup Language,Hyper Text Markup Language,1
+Which tag is used to create a hyperlink?,a,link,href,url,a,1
+Which CSS property changes text color?,color,font-color,text-color,background,color,1
+Which CSS property is used for spacing inside an element?,padding,margin,border,gap,padding,1
+Which display value enables flexbox?,flex,grid,block,inline,flex,1

@@ -1,0 +1,32 @@
+[
+  {
+    "questionText": "Which framework is commonly used with Node.js to build APIs?",
+    "options": ["Express", "Laravel", "Django", "Rails"],
+    "correctAnswer": "Express",
+    "marks": 1
+  },
+  {
+    "questionText": "Which middleware parses JSON request bodies in Express?",
+    "options": ["express.json()", "express.urlencoded()", "express.static()", "express.router()"],
+    "correctAnswer": "express.json()",
+    "marks": 1
+  },
+  {
+    "questionText": "Which object contains route parameters in Express?",
+    "options": ["req.body", "req.params", "req.query", "req.headers"],
+    "correctAnswer": "req.params",
+    "marks": 1
+  },
+  {
+    "questionText": "Which HTTP status code usually means resource created successfully?",
+    "options": ["200", "201", "400", "500"],
+    "correctAnswer": "201",
+    "marks": 1
+  },
+  {
+    "questionText": "Which package is commonly used to hash passwords in Node.js?",
+    "options": ["bcryptjs", "jsonwebtoken", "mongoose", "cors"],
+    "correctAnswer": "bcryptjs",
+    "marks": 1
+  }
+]

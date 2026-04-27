@@ -1,0 +1,32 @@
+[
+  {
+    "questionText": "Which React hook is used to manage local component state?",
+    "options": ["useEffect", "useState", "useMemo", "useRef"],
+    "correctAnswer": "useState",
+    "marks": 1
+  },
+  {
+    "questionText": "What does JSX allow us to write inside JavaScript?",
+    "options": ["SQL queries", "HTML-like UI code", "CSS only", "Server routes"],
+    "correctAnswer": "HTML-like UI code",
+    "marks": 1
+  },
+  {
+    "questionText": "Which hook is commonly used to run side effects?",
+    "options": ["useState", "useEffect", "useReducer", "useId"],
+    "correctAnswer": "useEffect",
+    "marks": 1
+  },
+  {
+    "questionText": "What is used to pass data from parent to child component?",
+    "options": ["Props", "Middleware", "Schema", "Reducer only"],
+    "correctAnswer": "Props",
+    "marks": 1
+  },
+  {
+    "questionText": "Which command is commonly used to create a Vite React project?",
+    "options": ["npm create vite@latest", "npm init react-app", "node create react", "vite install react"],
+    "correctAnswer": "npm create vite@latest",
+    "marks": 1
+  }
+]

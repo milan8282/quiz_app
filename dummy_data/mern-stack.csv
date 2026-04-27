@@ -1,0 +1,6 @@
+question,option1,option2,option3,option4,correctAnswer,marks
+What does MERN stand for?,MongoDB Express React Node,Mongoose Express Redux Next,Mongo Express Ruby Node,MariaDB Express React Node,MongoDB Express React Node,1
+Which part of MERN is used for frontend UI?,React,Express,MongoDB,Node.js,React,1
+Which part of MERN is commonly used as the backend runtime?,Node.js,React,MongoDB,Tailwind,Node.js,1
+Which library is commonly used to connect Node.js with MongoDB?,Mongoose,Axios,Redux,Vite,Mongoose,1
+Which package is commonly used for frontend API calls?,Axios,Morgan,Helmet,Bcrypt,Axios,1

@@ -1,0 +1,6 @@
+question,option1,option2,option3,option4,correctAnswer,marks
+What type of database is MongoDB?,Relational database,NoSQL database,Graph database,File system,NoSQL database,1
+Which format does MongoDB use to store documents?,BSON,CSV,XML,Plain text,BSON,1
+Which method is used to find documents in Mongoose?,find(),search(),getAll(),fetch(),find(),1
+Which field is automatically created as a unique document identifier?,_id,id,key,uuid,_id,1
+Which command is used to insert many documents?,insertMany(),addMany(),createBulk(),pushMany(),insertMany(),1

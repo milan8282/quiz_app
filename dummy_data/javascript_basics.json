@@ -1,0 +1,32 @@
+[
+  {
+    "questionText": "Which keyword is used to declare a constant in JavaScript?",
+    "options": ["var", "let", "const", "define"],
+    "correctAnswer": "const",
+    "marks": 1
+  },
+  {
+    "questionText": "Which method converts a JSON string into a JavaScript object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.object()"],
+    "correctAnswer": "JSON.parse()",
+    "marks": 1
+  },
+  {
+    "questionText": "Which value represents an intentional empty value?",
+    "options": ["undefined", "null", "NaN", "false"],
+    "correctAnswer": "null",
+    "marks": 1
+  },
+  {
+    "questionText": "Which operator is used for strict equality comparison?",
+    "options": ["==", "===", "!=", "="],
+    "correctAnswer": "===",
+    "marks": 1
+  },
+  {
+    "questionText": "Which array method adds an item to the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctAnswer": "push()",
+    "marks": 1
+  }
+]
