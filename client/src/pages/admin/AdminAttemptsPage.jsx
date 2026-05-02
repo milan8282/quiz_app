@@ -153,7 +153,7 @@ const AdminAttemptsPage = () => {
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Search by user, email, or quiz..."
-              className="input-field pl-12"
+              className="input-field !pl-12"
             />
           </div>
 
