@@ -60,9 +60,9 @@ const AppShell = () => {
     navigate("/login", { replace: true });
   };
 
-  const Sidebar = () => (
-    <aside className="flex h-full flex-col">
-      <div className="flex items-center gap-3">
+  const Sidebar = ({ isMobile = false }) => (
+    <aside className="flex h-full min-h-0 flex-col">
+      <div className="flex shrink-0 items-center gap-3">
         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 to-sky-500 text-white shadow-lg shadow-indigo-500/25">
           <Brain className="h-6 w-6" />
         </div>
@@ -76,7 +76,7 @@ const AppShell = () => {
         </div>
       </div>
 
-      <div className="mt-7 flex-1 space-y-1.5">
+      <div className="mt-7 min-h-0 flex-1 space-y-1.5 overflow-y-auto pr-1">
         {links.map((item) => (
           <SidebarLink
             key={item.to}
@@ -86,7 +86,11 @@ const AppShell = () => {
         ))}
       </div>
 
-      <div className="mt-5 rounded-3xl bg-slate-950 p-4 text-white shadow-xl shadow-slate-900/15">
+      <div
+        className={`shrink-0 rounded-3xl bg-slate-950 p-4 text-white shadow-xl shadow-slate-900/15 ${
+          isMobile ? "mt-4 mb-2" : "mt-5"
+        }`}
+      >
         <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-slate-400">
           Account
         </p>
@@ -109,14 +113,14 @@ const AppShell = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <div className="mx-auto flex w-full max-w-[1440px] gap-4 px-3 py-3 sm:px-4 lg:px-5 lg:py-5">
-        <div className="glass-card sticky top-5 hidden h-[calc(100vh-40px)] w-[260px] shrink-0 rounded-[28px] p-4 lg:block">
+        <div className="glass-card fixed left-5 top-5 z-40 hidden h-[calc(100vh-40px)] w-[260px] rounded-[28px] p-4 lg:block">
           <Sidebar />
         </div>
 
         {mobileOpen && (
           <div className="fixed inset-0 z-50 bg-slate-950/45 backdrop-blur-sm lg:hidden">
-            <div className="glass-card h-full w-[86vw] max-w-[330px] rounded-r-[28px] p-4">
-              <div className="mb-4 flex justify-end">
+            <div className="glass-card flex h-[100dvh] w-[86vw] max-w-[330px] flex-col rounded-r-[28px] p-4">
+              <div className="mb-4 flex shrink-0 justify-end">
                 <button
                   onClick={() => setMobileOpen(false)}
                   className="rounded-2xl bg-white p-2.5 text-slate-700 shadow"
@@ -124,12 +128,15 @@ const AppShell = () => {
                   <X className="h-5 w-5" />
                 </button>
               </div>
-              <Sidebar />
+
+              <div className="min-h-0 flex-1">
+                <Sidebar isMobile />
+              </div>
             </div>
           </div>
         )}
 
-        <main className="min-w-0 flex-1">
+        <main className="min-w-0 flex-1 lg:ml-[276px]">
           <header className="glass-card sticky top-3 z-30 mb-4 rounded-[24px] px-4 py-3 sm:px-5 lg:top-5 lg:mb-5">
             <div className="flex items-center justify-between gap-3">
               <div className="flex min-w-0 items-center gap-3">

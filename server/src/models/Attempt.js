@@ -8,7 +8,8 @@ const answerSchema = new mongoose.Schema(
     },
     selectedAnswer: {
       type: String,
-      required: true,
+      default: "",
+      trim: true,
     },
     isCorrect: {
       type: Boolean,
