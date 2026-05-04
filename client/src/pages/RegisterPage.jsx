@@ -93,7 +93,7 @@ const RegisterPage = () => {
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                   <input
-                    className="input-field pl-12"
+                    className="input-field !pl-12"
                     type="text"
                     name="name"
                     placeholder="Milan Developer"
@@ -111,7 +111,7 @@ const RegisterPage = () => {
                 <div className="relative">
                   <Mail className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                   <input
-                    className="input-field pl-12"
+                    className="input-field !pl-12"
                     type="email"
                     name="email"
                     placeholder="you@example.com"
@@ -129,7 +129,7 @@ const RegisterPage = () => {
                 <div className="relative">
                   <Lock className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                   <input
-                    className="input-field pl-12"
+                    className="input-field !pl-12"
                     type="password"
                     name="password"
                     placeholder="Minimum 6 characters"

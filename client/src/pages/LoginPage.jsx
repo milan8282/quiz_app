@@ -140,7 +140,7 @@ const LoginPage = () => {
                 <div className="relative">
                   <Mail className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                   <input
-                    className="input-field pl-12"
+                    className="input-field !pl-12"
                     type="email"
                     name="email"
                     placeholder="admin@test.com"
@@ -158,7 +158,7 @@ const LoginPage = () => {
                 <div className="relative">
                   <Lock className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                   <input
-                    className="input-field pl-12"
+                    className="input-field !pl-12"
                     type="password"
                     name="password"
                     placeholder="••••••••"
